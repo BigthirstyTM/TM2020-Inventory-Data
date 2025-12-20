@@ -1,10 +1,10 @@
 bl_info = {
     "name": "Trackmania 2020 Inventory",
     "author": "BigthirstyTM & AI Assistant",
-    "version": (4, 1),
+    "version": (4, 2),
     "blender": (5, 0, 0),
     "location": "View3D > Press Ctrl + Shift + I to open",
-    "description": "TM2020 Inventory - Fixed Right-Click passthrough for Outliner/Blender UI.",
+    "description": "TM2020 Style Inventory - Visual Import only (no physics clips).",
     "category": "Interface",
 }
 
@@ -49,7 +49,6 @@ class TM_Inventory_Manager:
         self.loading_status = "IDLE"
         self.current_mode = "BLOCKS"
         
-        # PERSISTENT UI STATE
         self.ui_pos_x = 150
         self.ui_pos_y = 200
         self.ui_width = 830.0
@@ -168,6 +167,7 @@ class TM_Inventory_Manager:
             self.import_gbx(self.selected_block_name)
 
     def import_gbx(self, name):
+        """Build path and trigger the GBX importer operator with Visuals Only"""
         if self.current_mode == "BLOCKS":
             filename = f"{name}.EDClassic.Gbx"
             filepath = os.path.join(BLOCK_IMPORT_PATH, filename)
@@ -177,10 +177,15 @@ class TM_Inventory_Manager:
 
         if os.path.exists(filepath):
             try:
+                # Trigger operator with visible_only and reuse_materials
                 bpy.ops.view3d.tm_nice_import_gbx(
                     'EXEC_DEFAULT',
                     filepath=filepath,
-                    files=[{"name": os.path.basename(filepath)}]
+                    files=[{"name": os.path.basename(filepath)}],
+                    visible_only=True,       # Skip _notvisible objects
+                    import_physics=False,     # Do not import collision meshes
+                    reuse_materials=True,    # Avoid material duplicates
+                    import_lights=True       # Keep lights
                 )
             except Exception as e:
                 print(f"[TM2020] Operator Error: {e}")
@@ -239,7 +244,7 @@ def draw_callback_px(self, context):
     has_search = tm_manager.search_query != ""
     search_rows = ((len(tm_manager.search_results) - 1) // 7 + 1) if has_search else 0
     
-    # Bottom bar
+    # FOOTER BAR
     draw_rect(tm_manager.ui_pos_x, tm_manager.ui_pos_y - bar_h, tm_manager.current_bar_width, bar_h, (0.01, 0.01, 0.01, 1.0), shader_flat)
     draw_rect(tm_manager.ui_pos_x + tm_manager.current_bar_width - bar_h, tm_manager.ui_pos_y - bar_h, bar_h, bar_h, (0.3, 0.3, 0.3, 1.0), shader_flat)
     hx = tm_manager.ui_pos_x + tm_manager.current_bar_width - (bar_h * 2) - 2
@@ -247,7 +252,6 @@ def draw_callback_px(self, context):
     blf.size(0, round(20 * s)); blf.color(0, 1, 1, 1, 1)
     q_tw, q_th = blf.dimensions(0, "?")
     blf.position(0, hx + (bar_h - q_tw)/2, (tm_manager.ui_pos_y - bar_h) + (bar_h - q_th)/2 + (2*s), 0); blf.draw(0, "?")
-    
     search_w = 280 * s
     sx, sy_s = hx - search_w - (5 * s), tm_manager.ui_pos_y - bar_h + (3 * s)
     draw_rect(sx, sy_s, search_w, bar_h - (6*s), (0.05, 0.35, 0.7, 1.0) if tm_manager.is_searching else (0.1, 0.1, 0.1, 1.0), shader_flat)
@@ -260,7 +264,7 @@ def draw_callback_px(self, context):
     if tw_f > avail: full_n = full_n[:int(len(full_n)*(avail/tw_f))-3] + "..."
     blf.draw(0, full_n)
 
-    # Mode Bar
+    # MODE BAR (GREEN)
     draw_rect(tm_manager.ui_pos_x, tm_manager.ui_pos_y, tm_manager.current_bar_width, bar_h, (0.0, 0.45, 0.2, 0.95), shader_flat)
     icon_s = 28 * s
     for i, m_name in enumerate(["BLOCKS", "ITEMS"]):
@@ -273,7 +277,7 @@ def draw_callback_px(self, context):
             batch = batch_for_shader(shader_img, 'TRI_FAN', {"pos": v, "texCoord": ((0,0),(1,0),(1,1),(0,1))})
             shader_img.bind(); shader_img.uniform_sampler("image", tm_manager.icons[tex_n]); batch.draw(shader_img)
 
-    # Cards
+    # CARDS
     start_y = tm_manager.ui_pos_y + bar_h + 10*s
     for r_idx, row_items in enumerate(tm_manager.active_rows):
         ry = start_y + (r_idx * row_h)
@@ -296,7 +300,7 @@ def draw_callback_px(self, context):
         tx, ty = tm_manager.ui_pos_x + tm_manager.current_bar_width + 10, tm_manager.ui_pos_y - bar_h
         draw_rect(tx, ty, tw_p, th_p, (0, 0, 0, 0.95), shader_flat)
         blf.size(0, round(15 * s)); blf.color(0, 1, 1, 1, 1)
-        lines = ["--- TM2020 INVENTORY HELP ---", "", "- L-Click Block: IMPORT to scene", "- L-Click Mode Bar: Switch Blocks/Items", "- L-Click Map: Open Folder", "- R-Click Window: Go back one level", "- Mouse-Drag: Move window", "- Bottom-Right Corner: Resize UI", "- TYPE in Search Box: Filter results", "- DELETE Key: Clear search field", "- Ctrl+V: Paste block name", "- Click Bottom Bar: Copy name to clipboard", "- Press ESC Key: Close Addon"]
+        lines = ["--- TM2020 INVENTORY HELP ---", "", "- L-Click Block: IMPORT Visual Only", "- L-Click Mode Bar: Switch Blocks/Items", "- L-Click Map: Open Folder", "- R-Click Window: Go back one level", "- Mouse-Drag: Move window", "- Bottom-Right Corner: Resize UI", "- TYPE in Search Box: Filter results", "- DELETE Key: Clear search field", "- Ctrl+V: Paste block name", "- Click Bottom Bar: Copy name to clipboard", "- Press ESC Key: Close Addon"]
         for i, line in enumerate(lines): blf.position(0, tx + 15, ty + th_p - (21 * s * (i+1)), 0); blf.draw(0, line)
 
 class VIEW3D_OT_tm_inventory(bpy.types.Operator):
@@ -319,7 +323,6 @@ class VIEW3D_OT_tm_inventory(bpy.types.Operator):
         hx = tm_manager.ui_pos_x + cur_w - (bar_h * 2) - 2
         sx, sy_s = hx - (280 * s) - (5 * s), tm_manager.ui_pos_y - bar_h
 
-        # Zones
         in_search = (sx <= mx <= sx + 280*s) and (sy_s <= my <= sy_s + bar_h)
         in_help = (hx <= mx <= hx + bar_h) and (tm_manager.ui_pos_y - bar_h <= my <= tm_manager.ui_pos_y)
         in_mode_bar = (tm_manager.ui_pos_x <= mx <= tm_manager.ui_pos_x + cur_w) and (tm_manager.ui_pos_y <= my <= tm_manager.ui_pos_y + bar_h)
@@ -335,7 +338,6 @@ class VIEW3D_OT_tm_inventory(bpy.types.Operator):
         is_over_ui = in_ui_body or in_bottom_bar or in_search or in_resize or in_mode_bar
         self.is_hovering_help = in_help
 
-        # Keyboard Search
         if tm_manager.is_searching:
             if event.value in {'PRESS', 'REPEAT'}:
                 if event.type == 'BACKSPACE': tm_manager.search_query = tm_manager.search_query[:-1]; tm_manager.update_live_search(); return {'RUNNING_MODAL'}
@@ -346,7 +348,6 @@ class VIEW3D_OT_tm_inventory(bpy.types.Operator):
             if event.type == 'LEFTMOUSE' and event.value == 'PRESS' and not in_search: tm_manager.is_searching = False
             else: return {'RUNNING_MODAL'}
 
-        # Mouse Click
         if event.type == 'LEFTMOUSE' and event.value == 'PRESS':
             if in_resize: self.is_scaling = True; return {'RUNNING_MODAL'}
             if in_search: tm_manager.is_searching = True; return {'RUNNING_MODAL'}
@@ -381,13 +382,9 @@ class VIEW3D_OT_tm_inventory(bpy.types.Operator):
                 if not item_hit: self.is_dragging = True; self.drag_offset = [tm_manager.ui_pos_x - mx, tm_manager.ui_pos_y - my]
                 return {'RUNNING_MODAL'}
 
-        # Fix for Right-Click Passthrough
         if event.type == 'RIGHTMOUSE' and event.value == 'PRESS':
-            if is_over_ui:
-                tm_manager.go_back()
-                return {'RUNNING_MODAL'}
-            else:
-                return {'PASS_THROUGH'}
+            if is_over_ui: tm_manager.go_back(); return {'RUNNING_MODAL'}
+            else: return {'PASS_THROUGH'}
 
         if event.type == 'LEFTMOUSE' and event.value == 'RELEASE': self.is_dragging = self.is_scaling = False
         if event.type == 'MOUSEMOVE':
@@ -395,10 +392,7 @@ class VIEW3D_OT_tm_inventory(bpy.types.Operator):
             if self.is_scaling: tm_manager.ui_width = max(620, mx - tm_manager.ui_pos_x); return {'RUNNING_MODAL'}
         if event.type == 'ESC': bpy.types.SpaceView3D.draw_handler_remove(self._handle, 'WINDOW'); return {'CANCELLED'}
         
-        # If mouse is outside the UI entirely, let Blender handle other inputs
-        if not is_over_ui and not self.is_dragging:
-            return {'PASS_THROUGH'}
-        
+        if not is_over_ui and not self.is_dragging: return {'PASS_THROUGH'}
         return {'RUNNING_MODAL'}
 
     def invoke(self, context, event):
@@ -407,6 +401,7 @@ class VIEW3D_OT_tm_inventory(bpy.types.Operator):
         context.window_manager.modal_handler_add(self)
         return {'RUNNING_MODAL'}
 
+addon_keymaps = []
 def register():
     bpy.utils.register_class(VIEW3D_OT_tm_inventory)
     wm = bpy.context.window_manager
