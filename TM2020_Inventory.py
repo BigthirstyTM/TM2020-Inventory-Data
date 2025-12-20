@@ -1,10 +1,10 @@
 bl_info = {
     "name": "Trackmania 2020 Inventory",
     "author": "BigthirstyTM & AI Assistant",
-    "version": (3, 7),
+    "version": (3, 8),
     "blender": (5, 0, 0),
     "location": "View3D > Press Ctrl + Shift + I to open",
-    "description": "TM2020 Style Inventory. Blocks & Items mode. Press Ctrl+Shift+I to toggle.",
+    "description": "TM2020 Style Inventory. Fixed click detection for stacked search results.",
     "category": "Interface",
 }
 
@@ -69,7 +69,7 @@ class TM_Inventory_Manager:
                 with open(BLOCKS_JSON_FILE, 'w', encoding='utf-8') as f: f.write(r.read().decode())
             with self.request_url(ITEMS_JSON_URL) as r:
                 with open(ITEMS_JSON_FILE, 'w', encoding='utf-8') as f: f.write(r.read().decode())
-            with self.request_url(ZIP_URL) as response:
+            with urllib.request.urlopen(ZIP_URL) as response:
                 zip_data = response.read()
             self.loading_status = "EXTRACTING"
             with zipfile.ZipFile(io.BytesIO(zip_data)) as z:
@@ -225,21 +225,19 @@ def draw_callback_px(self, context):
     blf.size(0, round(13 * s)); blf.color(0, 1, 1, 1, 1); blf.position(0, sx + 10, sy_s + 7, 0)
     blf.draw(0, f"{tm_manager.search_query}|" if tm_manager.is_searching else (tm_manager.search_query if has_search else "Search..."))
     blf.size(0, round(16 * s)); blf.color(0, 1, 1, 1, 1); blf.position(0, tm_manager.ui_pos_x + 10, tm_manager.ui_pos_y - (bar_h * 0.7), 0)
-    # Truncate text if needed
     avail = sx - tm_manager.ui_pos_x - 15*s
     full_n = f"TM2020 | {tm_manager.selected_block_name}"
     tw_f, _ = blf.dimensions(0, full_n)
     if tw_f > avail: full_n = full_n[:int(len(full_n)*(avail/tw_f))-3] + "..."
     blf.draw(0, full_n)
 
-    # 2. GREEN MODE BAR (Matches footer height)
+    # 2. MODE BAR
     draw_rect(tm_manager.ui_pos_x, tm_manager.ui_pos_y, tm_manager.current_bar_width, bar_h, (0.0, 0.45, 0.2, 0.95), shader_flat)
     icon_s = 28 * s
     for i, m_name in enumerate(["BLOCKS", "ITEMS"]):
         bx = tm_manager.ui_pos_x + 12 + (i * (icon_s + 18))
         by = tm_manager.ui_pos_y + (bar_h - icon_s)/2
         if tm_manager.current_mode == m_name: draw_rect(bx - 4, by - 4, icon_s + 8, icon_s + 8, (0, 0, 0, 0.2), shader_flat)
-        # Use exact filenames from GitHub
         tex_n = "Editor_Blocks" if m_name == "BLOCKS" else "Editor_Items"
         if tex_n in tm_manager.icons:
             v = ((bx, by), (bx + icon_s, by), (bx + icon_s, by + icon_s), (bx, by + icon_s))
@@ -299,9 +297,12 @@ class VIEW3D_OT_tm_inventory(bpy.types.Operator):
         in_resize = (tm_manager.ui_pos_x + cur_w - bar_h <= mx <= tm_manager.ui_pos_x + cur_w) and (tm_manager.ui_pos_y - bar_h <= my <= tm_manager.ui_pos_y)
         
         has_search = tm_manager.search_query != ""
-        total_rows = ((len(tm_manager.search_results) - 1) // 7 + 1) if has_search else len(tm_manager.active_rows)
+        # FIX: Total rows must be the SUM of tree and search rows when searching
+        search_rows = ((len(tm_manager.search_results) - 1) // 7 + 1) if has_search else 0
+        total_rows = len(tm_manager.active_rows) + search_rows
+        
         max_row_items = max(len(r) for r in tm_manager.active_rows) if tm_manager.active_rows else 0
-        full_content_w = max(cur_w, (max_row_items * (105*s + 10*s)) + (10*s))
+        full_content_w = max(cur_w, (max_row_items * (115*s)) + (10*s))
         in_ui_body = (tm_manager.ui_pos_x <= mx <= tm_manager.ui_pos_x + full_content_w) and (tm_manager.ui_pos_y <= my <= tm_manager.ui_pos_y + total_rows * row_h + bar_h + 10*s)
 
         self.is_hovering_help = in_help
@@ -319,29 +320,27 @@ class VIEW3D_OT_tm_inventory(bpy.types.Operator):
         if event.type == 'LEFTMOUSE' and event.value == 'PRESS':
             if in_resize: self.is_scaling = True; return {'RUNNING_MODAL'}
             if in_search: tm_manager.is_searching = True; return {'RUNNING_MODAL'}
-            
-            # --- COPY ACTION LOGIC ---
-            if in_bottom_bar and not in_help:
-                if tm_manager.selected_block_name != "None":
-                    context.window_manager.clipboard = tm_manager.selected_block_name
-                    self.report({'INFO'}, f"Copied: {tm_manager.selected_block_name}")
-                self.is_dragging = True; self.drag_offset = [tm_manager.ui_pos_x - mx, tm_manager.ui_pos_y - my]
-                return {'RUNNING_MODAL'}
-
             if in_mode_bar:
                 btn_size = 34 * s
                 for i, m in enumerate(["BLOCKS", "ITEMS"]):
                     bx = tm_manager.ui_pos_x + 10 + (i * (btn_size + 15))
                     if bx <= mx <= bx + btn_size: tm_manager.set_mode(m); return {'RUNNING_MODAL'}
-            
+            if in_bottom_bar and not in_help:
+                if tm_manager.selected_block_name != "None":
+                    context.window_manager.clipboard = tm_manager.selected_block_name
+                    self.report({'INFO'}, f"Copied: {tm_manager.selected_block_name}")
+                self.is_dragging = True; self.drag_offset = [tm_manager.ui_pos_x - mx, tm_manager.ui_pos_y - my]; return {'RUNNING_MODAL'}
             if in_ui_body:
                 tm_manager.is_searching = False
                 item_hit = False
                 sy_cards = tm_manager.ui_pos_y + bar_h + 10*s
+                # 1. CHECK SEARCH RESULTS FIRST (Top layers)
                 if has_search:
+                    start_search_y = sy_cards + (len(tm_manager.active_rows) * row_h)
                     for i, _ in enumerate(tm_manager.search_results):
-                        ix, iy = tm_manager.ui_pos_x + (10*s) + (i % 7) * (115*s), sy_cards + (len(tm_manager.active_rows) * row_h) + (i // 7) * row_h
+                        ix, iy = tm_manager.ui_pos_x + (10*s) + (i % 7) * (115*s), start_search_y + (i // 7) * row_h
                         if ix < mx < ix + 105*s and iy < my < iy + 130*s: tm_manager.select_item(0, i, True); item_hit = True; break
+                # 2. CHECK NAVIGATION TREE
                 if not item_hit:
                     for r_idx, row in enumerate(tm_manager.active_rows):
                         for i, _ in enumerate(row):
