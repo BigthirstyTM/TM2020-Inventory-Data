@@ -1,0 +1,1627 @@
+{ 
+	"ClassId" : "CGameItemModelTreeRoot", 
+	"Collection" : "Stadium", 
+	"SearchIn" : "game", 
+	"RootChilds" : [
+	{ "IsFolder" : true, "Name" : "Vegetation", 
+		"Childs" : [
+		{ "IsFolder" : true, "Name" : "Spring", 
+			"Childs" : [
+			{ "Name" : "Spring", }, 
+			{ "Name" : "SpringCherryTree", }, 
+			{ "Name" : "SpringPalmTree", }, 
+			{ "IsFolder" : true, "Name" : "SinglesTrees", 
+				"Childs" : [
+				{ "Name" : "SpringTreeTall", }, 
+				{ "Name" : "SpringTreeBig", }, 
+				{ "Name" : "SpringTreeMedium", }, 
+				{ "Name" : "SpringTreeSmall", }, 
+				{ "Name" : "SpringTreeVerySmall", }
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "SinglesCypress", 
+				"Childs" : [
+				{ "Name" : "CypressTall", }
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "SinglesCherryTrees", 
+				"Childs" : [
+				{ "Name" : "CherryTreeMedium", }
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "SinglePalmTrees", 
+				"Childs" : [
+				{ "Name" : "PalmTreeMedium", }, 
+				{ "Name" : "PalmTreeSmall", }
+				]
+			}
+			]
+		}, 
+		{ "IsFolder" : true, "Name" : "Summer", 
+			"Childs" : [
+			{ "Name" : "Summer", }, 
+			{ "Name" : "SummerPalmTree", }, 
+			{ "IsFolder" : true, "Name" : "SinglesCactus", 
+				"Childs" : [
+				{ "Name" : "CactusMedium", }, 
+				{ "Name" : "CactusVerySmall", }
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "SinglesFir", 
+				"Childs" : [
+				{ "Name" : "FirTall", }, 
+				{ "Name" : "FirMedium", }
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "SinglesCypress", 
+				"Childs" : [
+				{ "Name" : "CypressDirtTall", }
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "PalmTrees", 
+				"Childs" : [
+				{ "Name" : "PalmTreeDirtMedium", }, 
+				{ "Name" : "PalmTreeDirtSmall", }
+				]
+			}
+			]
+		}, 
+		{ "IsFolder" : true, "Name" : "Fall", 
+			"Childs" : [
+			{ "Name" : "Fall", }, 
+			{ "IsFolder" : true, "Name" : "SinglesTrees", 
+				"Childs" : [
+				{ "Name" : "FallTreeTall", }, 
+				{ "Name" : "FallTreeBig", }, 
+				{ "Name" : "FallTreeMedium", }, 
+				{ "Name" : "FallTreeSmall", }, 
+				{ "Name" : "FallTreeVerySmall", }
+				]
+			}
+			]
+		}, 
+		{ "IsFolder" : true, "Name" : "Winter", 
+			"Childs" : [
+			{ "Name" : "Winter", }, 
+			{ "Name" : "WinterFrozenTree", }, 
+			{ "IsFolder" : true, "Name" : "SinglesFirSnow", 
+				"Childs" : [
+				{ "Name" : "FirSnowTall", }, 
+				{ "Name" : "FirSnowMedium", }
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "FrozenTrees", 
+				"Childs" : [
+				{ "Name" : "FrozenTreeTall", }, 
+				{ "Name" : "FrozenTreeBig", }, 
+				{ "Name" : "FrozenTreeMedium", }, 
+				{ "Name" : "FrozenTreeSmall", }, 
+				{ "Name" : "FrozenTreeVerySmall", }
+				]
+			}
+			]
+		}, 
+		{ "IsFolder" : true, "Name" : "Obsolete", 
+			"Childs" : [
+			{ "Name" : "SpringTree", }, 
+			{ "Name" : "CherryTree", }, 
+			{ "Name" : "Cactus", }, 
+			{ "Name" : "FirSnow", }
+			]
+		}
+		]
+	}, 
+	{ "IsFolder" : true, "Name" : "Deco", 
+		"Childs" : [
+		{ "IsFolder" : true, "Name" : "Flags", 
+			"Childs" : [
+			{ "Name" : "Flag8m", }, 
+			{ "Name" : "Flag16m", }
+			]
+		}, 
+		{ "IsFolder" : true, "Name" : "RoadSigns", 
+			"Childs" : [
+			{ "Name" : "RoadSignC", }, 
+			{ "Name" : "RoadSign", }, 
+			{ "Name" : "RoadSignB", }, 
+			{ "Name" : "RoadSignWrongWay", }
+			]
+		}, 
+		{ "IsFolder" : true, "Name" : "Screens", 
+			"Childs" : [
+			{ "IsFolder" : true, "Name" : "1x1", 
+				"Childs" : [
+				{ "Name" : "Screen1x1Small", }, 
+				{ "Name" : "Screen1x1", }
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "2x1", 
+				"Childs" : [
+				{ "Name" : "Screen2x1Small", }, 
+				{ "Name" : "Screen2x1", }
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "4x1", 
+				"Childs" : [
+				{ "Name" : "Screen4x1Small", }, 
+				{ "Name" : "Screen4x1", }
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "6x1", 
+				"Childs" : [
+				{ "Name" : "RaceScreen6x1Small", }, 
+				{ "Name" : "RaceScreen6x1", }
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "2x3", 
+				"Childs" : [
+				{ "Name" : "Screen2x3Small", }, 
+				{ "Name" : "Screen2x3", }, 
+				{ "Name" : "Screen2x3Big", }
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "155", 
+				"Childs" : [
+				{ "Name" : "Screen155Small", }, 
+				{ "Name" : "Screen155", }
+				]
+			}
+			]
+		}, 
+		{ "IsFolder" : true, "Name" : "SideDecorations", 
+			"Childs" : [
+			{ "Name" : "Lamp", }, 
+			{ "Name" : "LampSmall", }
+			]
+		}, 
+		{ "IsFolder" : true, "Name" : "LightTubeSmall", 
+			"Childs" : [
+			{ "IsFolder" : true, "Name" : "Straight", 
+				"Childs" : [
+				{ "Name" : "LightTubeSmall4m", }, 
+				{ "Name" : "LightTubeSmall8m", }, 
+				{ "Name" : "LightTubeSmall16m", }, 
+				{ "Name" : "LightTubeSmall32m", }
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "DiagSquare", 
+				"Childs" : [
+				{ "Name" : "LightTubeSmall4mDiagSquare", }, 
+				{ "Name" : "LightTubeSmall8mDiagSquare", }, 
+				{ "Name" : "LightTubeSmall16mDiagSquare", }, 
+				{ "Name" : "LightTubeSmall32mDiagSquare", }
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "DiagCube", 
+				"Childs" : [
+				{ "Name" : "LightTubeSmall4mDiagCube", }, 
+				{ "Name" : "LightTubeSmall8mDiagCube", }, 
+				{ "Name" : "LightTubeSmall16mDiagCube", }, 
+				{ "Name" : "LightTubeSmall32mDiagCube", }
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "Curves", 
+				"Childs" : [
+				{ "Name" : "LightTubeSmall4mCurve", }, 
+				{ "Name" : "LightTubeSmall8mCurve", }, 
+				{ "Name" : "LightTubeSmall16mCurve", }, 
+				{ "Name" : "LightTubeSmall32mCurve", }, 
+				{ "Name" : "LightTubeSmall64mCurve", }, 
+				{ "Name" : "LightTubeSmall96mCurve", }
+				]
+			}
+			]
+		}, 
+		{ "IsFolder" : true, "Name" : "LightTubeBig", 
+			"Childs" : [
+			{ "IsFolder" : true, "Name" : "Straight", 
+				"Childs" : [
+				{ "Name" : "LightTubeBig4m", }, 
+				{ "Name" : "LightTubeBig8m", }, 
+				{ "Name" : "LightTubeBig16m", }, 
+				{ "Name" : "LightTubeBig32m", }
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "DiagSquare", 
+				"Childs" : [
+				{ "Name" : "LightTubeBig4mDiagSquare", }, 
+				{ "Name" : "LightTubeBig8mDiagSquare", }, 
+				{ "Name" : "LightTubeBig16mDiagSquare", }, 
+				{ "Name" : "LightTubeBig32mDiagSquare", }
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "DiagCube", 
+				"Childs" : [
+				{ "Name" : "LightTubeBig4mDiagCube", }, 
+				{ "Name" : "LightTubeBig8mDiagCube", }, 
+				{ "Name" : "LightTubeBig16mDiagCube", }, 
+				{ "Name" : "LightTubeBig32mDiagCube", }
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "Curves", 
+				"Childs" : [
+				{ "Name" : "LightTubeBig4mCurve", }, 
+				{ "Name" : "LightTubeBig8mCurve", }, 
+				{ "Name" : "LightTubeBig16mCurve", }, 
+				{ "Name" : "LightTubeBig32mCurve", }, 
+				{ "Name" : "LightTubeBig64mCurve", }, 
+				{ "Name" : "LightTubeBig96mCurve", }
+				]
+			}
+			]
+		}, 
+		{ "IsFolder" : true, "Name" : "LightShapes", 
+			"Childs" : [
+			{ "IsFolder" : true, "Name" : "Cube", 
+				"Childs" : [
+				{ "Name" : "LightCube2m", }, 
+				{ "Name" : "LightCube4m", }, 
+				{ "Name" : "LightCube8m", }, 
+				{ "Name" : "LightCube2mX2", }, 
+				{ "Name" : "LightCube4mX2", }, 
+				{ "Name" : "LightCube8mX2", }
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "CubeSlope", 
+				"Childs" : [
+				{ "Name" : "LightCubeSlope2m", }, 
+				{ "Name" : "LightCubeSlope4m", }, 
+				{ "Name" : "LightCubeSlope8m", }, 
+				{ "Name" : "LightCubeSlope2mX2", }, 
+				{ "Name" : "LightCubeSlope4mX2", }, 
+				{ "Name" : "LightCubeSlope8mX2", }
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "CubeSlopeCorner", 
+				"Childs" : [
+				{ "Name" : "LightCubeSlopeCornerOut2m", }, 
+				{ "Name" : "LightCubeSlopeCornerOut4m", }, 
+				{ "Name" : "LightCubeSlopeCornerOut8m", }, 
+				{ "Name" : "LightCubeSlopeCornerOut2mX2", }, 
+				{ "Name" : "LightCubeSlopeCornerOut4mX2", }, 
+				{ "Name" : "LightCubeSlopeCornerOut8mX2", }
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "CubeSlopeDiag", 
+				"Childs" : [
+				{ "Name" : "LightCubeSlopeDiag2m", }, 
+				{ "Name" : "LightCubeSlopeDiag4m", }, 
+				{ "Name" : "LightCubeSlopeDiag8m", }, 
+				{ "Name" : "LightCubeSlopeDiag2mX2", }, 
+				{ "Name" : "LightCubeSlopeDiag4mX2", }, 
+				{ "Name" : "LightCubeSlopeDiag8mX2", }
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "Sphere", 
+				"Childs" : [
+				{ "Name" : "LightSphere2m", }, 
+				{ "Name" : "LightSphere4m", }, 
+				{ "Name" : "LightSphere8m", }
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "SphereDemi", 
+				"Childs" : [
+				{ "Name" : "LightSphereDemi2m", }, 
+				{ "Name" : "LightSphereDemi4m", }, 
+				{ "Name" : "LightSphereDemi8m", }
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "SphereQuarter", 
+				"Childs" : [
+				{ "Name" : "LightSphereQuarter2m", }, 
+				{ "Name" : "LightSphereQuarter4m", }, 
+				{ "Name" : "LightSphereQuarter8m", }
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "Cylinder", 
+				"Childs" : [
+				{ "Name" : "LightCylinder2m", }, 
+				{ "Name" : "LightCylinder4m", }, 
+				{ "Name" : "LightCylinder8m", }
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "CylinderQuarter", 
+				"Childs" : [
+				{ "Name" : "LightCylinderQuarter2m", }, 
+				{ "Name" : "LightCylinderQuarter4m", }, 
+				{ "Name" : "LightCylinderQuarter8m", }
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "Cone", 
+				"Childs" : [
+				{ "Name" : "LightCone2mX2", }, 
+				{ "Name" : "LightCone4mX2", }, 
+				{ "Name" : "LightCone8mX2", }
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "Arch", 
+				"Childs" : [
+				{ "Name" : "LightCubeArch2m", }, 
+				{ "Name" : "LightCubeArch4m", }, 
+				{ "Name" : "LightCubeArch8m", }
+				]
+			}
+			]
+		}, 
+		{ "IsFolder" : true, "Name" : "TunnelSupports", 
+			"Childs" : [
+			{ "IsFolder" : true, "Name" : "TunnelSupportArch", 
+				"Childs" : [
+				{ "Name" : "TunnelSupportArch8m", }, 
+				{ "Name" : "TunnelSupportArch16m", }, 
+				{ "Name" : "TunnelSupportHalfArch8m", }, 
+				{ "Name" : "TunnelSupportHalfArch16m", }, 
+				{ "Name" : "TunnelSupportArchCenter", }
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "TunnelSupportPillar", 
+				"Childs" : [
+				{ "Name" : "TunnelSupportPillar8m", }, 
+				{ "Name" : "TunnelSupportPillar16m", }
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "TunnelSupportPillarLarge", 
+				"Childs" : [
+				{ "Name" : "TunnelSupportPillarLarge8m", }, 
+				{ "Name" : "TunnelSupportPillarLarge16m", }
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "GateSupport", 
+				"Childs" : [
+				{ "Name" : "GateSupport", }
+				]
+			}
+			]
+		}, 
+		{ "IsFolder" : true, "Name" : "Rigs", 
+			"Childs" : [
+			{ "Name" : "Show", }, 
+			{ "Name" : "ShowLights", }, 
+			{ "Name" : "ShowSpeakers", }, 
+			{ "Name" : "ShowScreen", }, 
+			{ "Name" : "ShowRace", }
+			]
+		}, 
+		{ "IsFolder" : true, "Name" : "ShowParts", 
+			"Childs" : [
+			{ "IsFolder" : true, "Name" : "Lights", 
+				"Childs" : [
+				{ "Name" : "ShowLight4Spots", }, 
+				{ "Name" : "ShowLightRamp4m", }, 
+				{ "Name" : "ShowLightRamp8m", }
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "Speakers", 
+				"Childs" : [
+				{ "Name" : "ShowSpeaker", }, 
+				{ "Name" : "ShowSpeakerB", }, 
+				{ "Name" : "ShowSpeaker1X4", }, 
+				{ "Name" : "ShowSpeakerRamp8m", }, 
+				{ "Name" : "ShowSpeakerRamp8mB", }
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "Fogger", 
+				"Childs" : [
+				{ "Name" : "ShowFogger8m", }, 
+				{ "Name" : "ShowFogger16m", }, 
+				{ "Name" : "ShowFoggerWithLight8m", }, 
+				{ "Name" : "ShowFoggerWithLight16m", }
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "Sparklers", 
+				"Childs" : [
+				{ "Name" : "Sparkler8m", }, 
+				{ "Name" : "Sparkler16m", }
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "Torch", 
+				"Childs" : [
+				{ "Name" : "ShowTorch", }, 
+				{ "Name" : "ShowTorchSmall", }
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "Straights", 
+				"Childs" : [
+				{ "Name" : "ShowRigStraight32m", }, 
+				{ "Name" : "ShowRigStraight16m", }, 
+				{ "Name" : "ShowRigStraight8m", }, 
+				{ "Name" : "ShowRigStraight2m", }, 
+				{ "Name" : "ShowRigVertical8m", }
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "Supports", 
+				"Childs" : [
+				{ "IsFolder" : true, "Name" : "Curve1In", 
+					"Childs" : [
+					{ "Name" : "ShowRigSupportCurve1In", }, 
+					{ "Name" : "ShowRigSupportCurve1InBack", }, 
+					{ "Name" : "ShowRigSupportCurve1InFront", }
+					]
+				}, 
+				{ "IsFolder" : true, "Name" : "Curve2In", 
+					"Childs" : [
+					{ "Name" : "ShowRigSupportCurve2In", }, 
+					{ "Name" : "ShowRigSupportCurve2InBack", }, 
+					{ "Name" : "ShowRigSupportCurve2InFront", }
+					]
+				}, 
+				{ "IsFolder" : true, "Name" : "Curve3In", 
+					"Childs" : [
+					{ "Name" : "ShowRigSupportCurve3In", }, 
+					{ "Name" : "ShowRigSupportCurve3InBack", }, 
+					{ "Name" : "ShowRigSupportCurve3InFront", }
+					]
+				}, 
+				{ "IsFolder" : true, "Name" : "Curve1Out", 
+					"Childs" : [
+					{ "Name" : "ShowRigSupportCurve1Out", }, 
+					{ "Name" : "ShowRigSupportCurve1OutBack", }, 
+					{ "Name" : "ShowRigSupportCurve1OutFront", }
+					]
+				}, 
+				{ "IsFolder" : true, "Name" : "Curve2Out", 
+					"Childs" : [
+					{ "Name" : "ShowRigSupportCurve2Out", }, 
+					{ "Name" : "ShowRigSupportCurve2OutBack", }, 
+					{ "Name" : "ShowRigSupportCurve2OutFront", }
+					]
+				}, 
+				{ "IsFolder" : true, "Name" : "Curve3Out", 
+					"Childs" : [
+					{ "Name" : "ShowRigSupportCurve3Out", }, 
+					{ "Name" : "ShowRigSupportCurve3OutBack", }, 
+					{ "Name" : "ShowRigSupportCurve3OutFront", }
+					]
+				}
+				]
+			}
+			]
+		}
+		]
+	}, 
+	{ "IsFolder" : true, "Name" : "Technics", 
+		"Childs" : [
+		{ "IsFolder" : true, "Name" : "Checkpoint", 
+			"Childs" : [
+			{ "IsFolder" : true, "Name" : "CPLeft", 
+				"Childs" : [
+				{ "Name" : "GateCheckpointLeft8m", }, 
+				{ "Name" : "GateCheckpointLeft16m", }, 
+				{ "Name" : "GateCheckpointLeft32m", }
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "CPCenter", 
+				"Childs" : [
+				{ "Name" : "GateCheckpointCenter8mv2", }, 
+				{ "Name" : "GateCheckpointCenter16mv2", }, 
+				{ "Name" : "GateCheckpointCenter24m", }, 
+				{ "Name" : "GateCheckpointCenter32mv2", }
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "CPRight", 
+				"Childs" : [
+				{ "Name" : "GateCheckpointRight8m", }, 
+				{ "Name" : "GateCheckpointRight16m", }, 
+				{ "Name" : "GateCheckpointRight32m", }
+				]
+			}
+			]
+		}, 
+		{ "IsFolder" : true, "Name" : "Start", 
+			"Childs" : [
+			{ "IsFolder" : true, "Name" : "StartLeft", 
+				"Childs" : [
+				{ "Name" : "GateStartLeft8m", }, 
+				{ "Name" : "GateStartLeft16m", }, 
+				{ "Name" : "GateStartLeft32m", }
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "StartCenter", 
+				"Childs" : [
+				{ "Name" : "GateStartCenter8m", }, 
+				{ "Name" : "GateStartCenter16m", }, 
+				{ "Name" : "GateStartCenter32m", }
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "StartRight", 
+				"Childs" : [
+				{ "Name" : "GateStartRight8m", }, 
+				{ "Name" : "GateStartRight16m", }, 
+				{ "Name" : "GateStartRight32m", }
+				]
+			}
+			]
+		}, 
+		{ "IsFolder" : true, "Name" : "Finish", 
+			"Childs" : [
+			{ "IsFolder" : true, "Name" : "Finish", 
+				"Childs" : [
+				{ "Name" : "GateFinish8m", }, 
+				{ "Name" : "GateFinish16m", }, 
+				{ "Name" : "GateFinish32m", }
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "FinishCenter", 
+				"Childs" : [
+				{ "Name" : "GateFinishCenter8mv2", }, 
+				{ "Name" : "GateFinishCenter16mv2", }, 
+				{ "Name" : "GateFinishCenter32mv2", }
+				]
+			}
+			]
+		}, 
+		{ "IsFolder" : true, "Name" : "Multilap", 
+			"Childs" : [
+			{ "IsFolder" : true, "Name" : "MultilapLeft", 
+				"Childs" : [
+				{ "Name" : "GateMultilapLeft8m", }, 
+				{ "Name" : "GateMultilapLeft16m", }, 
+				{ "Name" : "GateMultilapLeft32m", }
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "MultilapCenter", 
+				"Childs" : [
+				{ "Name" : "GateMultilapCenter8m", }, 
+				{ "Name" : "GateMultilapCenter16m", }, 
+				{ "Name" : "GateMultilapCenter32m", }
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "MultilapRight", 
+				"Childs" : [
+				{ "Name" : "GateMultilapRight8m", }, 
+				{ "Name" : "GateMultilapRight16m", }, 
+				{ "Name" : "GateMultilapRight32m", }
+				]
+			}
+			]
+		}, 
+		{ "IsFolder" : true, "Name" : "GateSpecials", 
+			"Childs" : [
+			{ "IsFolder" : true, "Name" : "Turbo", 
+				"Childs" : [
+				{ "Name" : "GateSpecial4mTurbo", }, 
+				{ "Name" : "GateSpecial8mTurbo", }, 
+				{ "Name" : "GateSpecial16mTurbo", }, 
+				{ "Name" : "GateSpecial24mTurbo", }, 
+				{ "Name" : "GateSpecial32mTurbo", }
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "Turbo2", 
+				"Childs" : [
+				{ "Name" : "GateSpecial4mTurbo2", }, 
+				{ "Name" : "GateSpecial8mTurbo2", }, 
+				{ "Name" : "GateSpecial16mTurbo2", }, 
+				{ "Name" : "GateSpecial24mTurbo2", }, 
+				{ "Name" : "GateSpecial32mTurbo2", }
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "TurboRoulette", 
+				"Childs" : [
+				{ "Name" : "GateSpecial4mTurboRoulette", }, 
+				{ "Name" : "GateSpecial8mTurboRoulette", }, 
+				{ "Name" : "GateSpecial16mTurboRoulette", }, 
+				{ "Name" : "GateSpecial24mTurboRoulette", }, 
+				{ "Name" : "GateSpecial32mTurboRoulette", }
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "Boost", 
+				"Childs" : [
+				{ "Name" : "GateSpecial4mBoost", }, 
+				{ "Name" : "GateSpecial8mBoost", }, 
+				{ "Name" : "GateSpecial16mBoost", }, 
+				{ "Name" : "GateSpecial24mBoost", }, 
+				{ "Name" : "GateSpecial32mBoost", }
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "Boost2", 
+				"Childs" : [
+				{ "Name" : "GateSpecial4mBoost2", }, 
+				{ "Name" : "GateSpecial8mBoost2", }, 
+				{ "Name" : "GateSpecial16mBoost2", }, 
+				{ "Name" : "GateSpecial24mBoost2", }, 
+				{ "Name" : "GateSpecial32mBoost2", }
+				]
+			}
+			]
+		}, 
+		{ "IsFolder" : true, "Name" : "GateSpecials2", 
+			"Childs" : [
+			{ "IsFolder" : true, "Name" : "Cruise", 
+				"Childs" : [
+				{ "Name" : "GateSpecial4mCruise", }, 
+				{ "Name" : "GateSpecial8mCruise", }, 
+				{ "Name" : "GateSpecial16mCruise", }, 
+				{ "Name" : "GateSpecial24mCruise", }, 
+				{ "Name" : "GateSpecial32mCruise", }
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "NoBrake", 
+				"Childs" : [
+				{ "Name" : "GateSpecial4mNoBrake", }, 
+				{ "Name" : "GateSpecial8mNoBrake", }, 
+				{ "Name" : "GateSpecial16mNoBrake", }, 
+				{ "Name" : "GateSpecial24mNoBrake", }, 
+				{ "Name" : "GateSpecial32mNoBrake", }
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "NoEngine", 
+				"Childs" : [
+				{ "Name" : "GateSpecial4mNoEngine", }, 
+				{ "Name" : "GateSpecial8mNoEngine", }, 
+				{ "Name" : "GateSpecial16mNoEngine", }, 
+				{ "Name" : "GateSpecial24mNoEngine", }, 
+				{ "Name" : "GateSpecial32mNoEngine", }
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "NoSteering", 
+				"Childs" : [
+				{ "Name" : "GateSpecial4mNoSteering", }, 
+				{ "Name" : "GateSpecial8mNoSteering", }, 
+				{ "Name" : "GateSpecial16mNoSteering", }, 
+				{ "Name" : "GateSpecial24mNoSteering", }, 
+				{ "Name" : "GateSpecial32mNoSteering", }
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "SlowMotion", 
+				"Childs" : [
+				{ "Name" : "GateSpecial4mSlowMotion", }, 
+				{ "Name" : "GateSpecial8mSlowMotion", }, 
+				{ "Name" : "GateSpecial16mSlowMotion", }, 
+				{ "Name" : "GateSpecial24mSlowMotion", }, 
+				{ "Name" : "GateSpecial32mSlowMotion", }
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "Fragile", 
+				"Childs" : [
+				{ "Name" : "GateSpecial4mFragile", }, 
+				{ "Name" : "GateSpecial8mFragile", }, 
+				{ "Name" : "GateSpecial16mFragile", }, 
+				{ "Name" : "GateSpecial24mFragile", }, 
+				{ "Name" : "GateSpecial32mFragile", }
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "Reset", 
+				"Childs" : [
+				{ "Name" : "GateSpecial4mReset", }, 
+				{ "Name" : "GateSpecial8mReset", }, 
+				{ "Name" : "GateSpecial16mReset", }, 
+				{ "Name" : "GateSpecial24mReset", }, 
+				{ "Name" : "GateSpecial32mReset", }
+				]
+			}
+			]
+		}, 
+		{ "IsFolder" : true, "Name" : "GatesGameplay", 
+			"Childs" : [
+			{ "IsFolder" : true, "Name" : "GameplayStadium", 
+				"Childs" : [
+				{ "Name" : "GateGameplayStadium4m", }, 
+				{ "Name" : "GateGameplayStadium8m", }, 
+				{ "Name" : "GateGameplayStadium16m", }, 
+				{ "Name" : "GateGameplayStadium24m", }, 
+				{ "Name" : "GateGameplayStadium32m", }
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "GameplaySnow", 
+				"Childs" : [
+				{ "Name" : "SnowGateGameplay", }, 
+				{ "Name" : "GateGameplaySnow4m", }, 
+				{ "Name" : "GateGameplaySnow8m", }, 
+				{ "Name" : "GateGameplaySnow16m", }, 
+				{ "Name" : "GateGameplaySnow24m", }, 
+				{ "Name" : "GateGameplaySnow32m", }
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "GateGameplayRally", 
+				"Childs" : [
+				{ "Name" : "RallyGateGameplay", }, 
+				{ "Name" : "GateGameplayRally4m", }, 
+				{ "Name" : "GateGameplayRally8m", }, 
+				{ "Name" : "GateGameplayRally16m", }, 
+				{ "Name" : "GateGameplayRally24m", }, 
+				{ "Name" : "GateGameplayRally32m", }
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "Desert", 
+				"Childs" : [
+				{ "Name" : "DesertGateGameplay", }, 
+				{ "Name" : "GateGameplayDesert4m", }, 
+				{ "Name" : "GateGameplayDesert8m", }, 
+				{ "Name" : "GateGameplayDesert16m", }, 
+				{ "Name" : "GateGameplayDesert24m", }, 
+				{ "Name" : "GateGameplayDesert32m", }
+				]
+			}
+			]
+		}, 
+		{ "IsFolder" : true, "Name" : "Podium", 
+			"Childs" : [
+			{ "Name" : "Podium", }, 
+			{ "Name" : "PodiumNoScreen", }
+			]
+		}
+		]
+	}, 
+	{ "IsFolder" : true, "Name" : "Themes", 
+		"Childs" : [
+		{ "IsFolder" : true, "Name" : "ThemeSnow", 
+			"Childs" : [
+			{ "IsFolder" : true, "Name" : "Temple", 
+				"Childs" : [
+				{ "Name" : "SnowTemple32m", }, 
+				{ "Name" : "SnowTemple24m", }, 
+				{ "Name" : "SnowTemple16m", }
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "TempleRoad", 
+				"Childs" : [
+				{ "Name" : "SnowTempleRoadStraight", }, 
+				{ "Name" : "SnowTempleRoadCorner", }, 
+				{ "Name" : "SnowTempleCross", }, 
+				{ "Name" : "SnowTempleRoadTShaped", }, 
+				{ "Name" : "SnowTempleDeadEnd", }
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "Bridge", 
+				"Childs" : [
+				{ "Name" : "SnowBridgeUtop", }, 
+				{ "Name" : "SnowBridgeUBottom", }, 
+				{ "Name" : "SnowBridgeStraight", }, 
+				{ "Name" : "SnowBridgeSlopeStart", }, 
+				{ "Name" : "SnowBridgeSlopeEnd", }, 
+				{ "Name" : "SnowBridgeSlope2Base", }
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "Lamp", 
+				"Childs" : [
+				{ "Name" : "SnowLampSupportLampion", }, 
+				{ "Name" : "SnowLampSupportLamp2", }, 
+				{ "Name" : "SnowLampSupportLamp1", }
+				]
+			}
+			]
+		}, 
+		{ "IsFolder" : true, "Name" : "CastleTowers", 
+			"Childs" : [
+			{ "Name" : "RallyCastleTower12mRoof", }, 
+			{ "Name" : "RallyCastleTower12mBattlements", }, 
+			{ "Name" : "RallyCastleTower12mX1", }, 
+			{ "Name" : "RallyCastleTower12mX2", }, 
+			{ "Name" : "RallyCastleTower12mX4", }
+			]
+		}
+		]
+	}, 
+	{ "IsFolder" : true, "Name" : "StaticObstacles", 
+		"Childs" : [
+		{ "IsFolder" : true, "Name" : "Pillar", 
+			"Childs" : [
+			{ "Name" : "ObstaclePillar2m", }, 
+			{ "Name" : "ObstaclePillar4m", }, 
+			{ "Name" : "ObstaclePillar8m", }, 
+			{ "Name" : "ObstaclePillar16m", }
+			]
+		}, 
+		{ "IsFolder" : true, "Name" : "PillarRectangular", 
+			"Childs" : [
+			{ "Name" : "ObstaclePillarRectangular2m", }, 
+			{ "Name" : "ObstaclePillarRectangular4m", }, 
+			{ "Name" : "ObstaclePillarRectangular8m", }, 
+			{ "Name" : "ObstaclePillarRectangular16m", }
+			]
+		}, 
+		{ "IsFolder" : true, "Name" : "barriers", 
+			"Childs" : [
+			{ "IsFolder" : true, "Name" : "Sport", 
+				"Childs" : [
+				{ "Name" : "TrackBarrier4m", }, 
+				{ "Name" : "TrackBarrier4mB", }, 
+				{ "Name" : "TrackBarrier4mC", }
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "Themes", 
+				"Childs" : [
+				{ "Name" : "SnowBarrier", }, 
+				{ "Name" : "RallyBarrierStone", }, 
+				{ "Name" : "RallyBarrier", }, 
+				{ "Name" : "RallyBarrierHigh", }, 
+				{ "Name" : "DesertBarrier", }
+				]
+			}
+			]
+		}, 
+		{ "IsFolder" : true, "Name" : "Ramps", 
+			"Childs" : [
+			{ "Name" : "RampLowv2", }, 
+			{ "Name" : "RampMedv2", }, 
+			{ "Name" : "RampHighv2", }
+			]
+		}
+		]
+	}, 
+	{ "IsFolder" : true, "Name" : "Inflatables", 
+		"Childs" : [
+		{ "IsFolder" : true, "Name" : "Unnamed_0", 
+			"Childs" : [
+			{ "Name" : "InflatableMat4mStraight1x1", }, 
+			{ "Name" : "InflatableMat2mStraight1x1", }, 
+			{ "Name" : "InflatableMat1mStraight1x1", }
+			]
+		}, 
+		{ "IsFolder" : true, "Name" : "Curves", 
+			"Childs" : [
+			{ "IsFolder" : true, "Name" : "Curve1", 
+				"Childs" : [
+				{ "Name" : "InflatableMat4mCurve1", }, 
+				{ "Name" : "InflatableMat2mCurve1", }, 
+				{ "Name" : "InflatableMat1mCurve1", }
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "Curve2", 
+				"Childs" : [
+				{ "Name" : "InflatableMat4mCurve2", }, 
+				{ "Name" : "InflatableMat2mCurve2", }, 
+				{ "Name" : "InflatableMat1mCurve2", }
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "Curve3", 
+				"Childs" : [
+				{ "Name" : "InflatableMat4mCurve3", }, 
+				{ "Name" : "InflatableMat2mCurve3", }, 
+				{ "Name" : "InflatableMat1mCurve3", }
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "Curve4", 
+				"Childs" : [
+				{ "Name" : "InflatableMat4mCurve4", }, 
+				{ "Name" : "InflatableMat2mCurve4", }, 
+				{ "Name" : "InflatableMat1mCurve4", }
+				]
+			}
+			]
+		}, 
+		{ "IsFolder" : true, "Name" : "Unnamed_1", 
+			"Childs" : [
+			{ "IsFolder" : true, "Name" : "SlopeBase", 
+				"Childs" : [
+				{ "Name" : "InflatableMat1mSlopeBase1x1", }
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "Slope4+", 
+				"Childs" : [
+				{ "Name" : "InflatableMat1mSlope4Straight1x1", }, 
+				{ "Name" : "InflatableMat1mSlopeStart1x1", }, 
+				{ "Name" : "InflatableMat1mSlopeEnd1x1", }
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "Slope8", 
+				"Childs" : [
+				{ "Name" : "InflatableMat1mSlope8Straight1x1", }, 
+				{ "Name" : "InflatableMat1mSlope8Start1x1", }, 
+				{ "Name" : "InflatableMat1mSlope8End1x1", }
+				]
+			}
+			]
+		}, 
+		{ "IsFolder" : true, "Name" : "SlopeThin", 
+			"Childs" : [
+			{ "IsFolder" : true, "Name" : "Unnamed_0", 
+				"Childs" : [
+				{ "Name" : "InflatableMat0To4mSlopeBase1x1", }, 
+				{ "Name" : "InflatableMat0To2mSlopeBase1x1", }, 
+				{ "Name" : "InflatableMat0To1mSlopeBase1x1", }
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "SlopeStraight", 
+				"Childs" : [
+				{ "Name" : "InflatableMat0To4mSlopeStraight1x1", }, 
+				{ "Name" : "InflatableMat0To2mSlopeStraight1x1", }, 
+				{ "Name" : "InflatableMat0To1mSlopeStraight1x1", }
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "SlopeStraightDiagIn", 
+				"Childs" : [
+				{ "Name" : "InflatableMat0To4mSlopeStraightDiagIn", }, 
+				{ "Name" : "InflatableMat0To2mSlopeStraightDiagIn", }, 
+				{ "Name" : "InflatableMat0To1mSlopeStraightDiagIn", }
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "SlopeStraightDiagOut", 
+				"Childs" : [
+				{ "Name" : "InflatableMat0To4mSlopeStraightDiagOutv2", }, 
+				{ "Name" : "InflatableMat0To2mSlopeStraightDiagOutv2", }, 
+				{ "Name" : "InflatableMat0To1mSlopeStraightDiagOutv2", }
+				]
+			}
+			]
+		}, 
+		{ "IsFolder" : true, "Name" : "InflatableBorders", 
+			"Childs" : [
+			{ "IsFolder" : true, "Name" : "InflatableBorders", 
+				"Childs" : [
+				{ "Name" : "InflatableBorder1mStraight1m", }, 
+				{ "Name" : "InflatableBorder1mStraight2m", }, 
+				{ "Name" : "InflatableBorder1mStraight4m", }, 
+				{ "Name" : "InflatableBorder1mStraight8m", }, 
+				{ "Name" : "InflatableBorder1mStraight16m", }
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "BorderCorners", 
+				"Childs" : [
+				{ "Name" : "InflatableBorder1mCornerOut", }, 
+				{ "Name" : "InflatableBorder1mCornerIn", }
+				]
+			}
+			]
+		}, 
+		{ "IsFolder" : true, "Name" : "BorderCurves", 
+			"Childs" : [
+			{ "IsFolder" : true, "Name" : "CurveOut", 
+				"Childs" : [
+				{ "Name" : "InflatableBorder1mCurve0Out", }, 
+				{ "Name" : "InflatableBorder1mCurve1Out", }, 
+				{ "Name" : "InflatableBorder1mCurve2Out", }, 
+				{ "Name" : "InflatableBorder1mCurve3Out", }, 
+				{ "Name" : "InflatableBorder1mCurve4Out", }
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "CurveIn", 
+				"Childs" : [
+				{ "Name" : "InflatableBorder1mCurve1In", }, 
+				{ "Name" : "InflatableBorder1mCurve2In", }, 
+				{ "Name" : "InflatableBorder1mCurve3In", }, 
+				{ "Name" : "InflatableBorder1mCurve4In", }, 
+				{ "Name" : "InflatableBorder1mCurve5In", }
+				]
+			}
+			]
+		}, 
+		{ "IsFolder" : true, "Name" : "Slopes", 
+			"Childs" : [
+			{ "IsFolder" : true, "Name" : "Base", 
+				"Childs" : [
+				{ "IsFolder" : true, "Name" : "4", 
+					"Childs" : [
+					{ "Name" : "InflatableBorder1mSlope4BaseLeft", }, 
+					{ "Name" : "InflatableBorder1mSlope4BaseRight", }
+					]
+				}, 
+				{ "IsFolder" : true, "Name" : "2", 
+					"Childs" : [
+					{ "Name" : "InflatableBorder1mSlope2BaseLeft", }, 
+					{ "Name" : "InflatableBorder1mSlope2BaseRight", }
+					]
+				}, 
+				{ "IsFolder" : true, "Name" : "1", 
+					"Childs" : [
+					{ "Name" : "InflatableBorder1mSlope1BaseLeft", }, 
+					{ "Name" : "InflatableBorder1mSlope1BaseRight", }
+					]
+				}
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "Straight", 
+				"Childs" : [
+				{ "IsFolder" : true, "Name" : "8", 
+					"Childs" : [
+					{ "Name" : "InflatableBorder1mSlope8StraightLeft", }, 
+					{ "Name" : "InflatableBorder1mSlope8StraightRight", }
+					]
+				}, 
+				{ "IsFolder" : true, "Name" : "4", 
+					"Childs" : [
+					{ "Name" : "InflatableBorder1mSlope4StraightLeft", }, 
+					{ "Name" : "InflatableBorder1mSlope4StraightRight", }
+					]
+				}, 
+				{ "IsFolder" : true, "Name" : "2", 
+					"Childs" : [
+					{ "Name" : "InflatableBorder1mSlope2StraightLeft", }, 
+					{ "Name" : "InflatableBorder1mSlope2StraightRight", }
+					]
+				}, 
+				{ "IsFolder" : true, "Name" : "1", 
+					"Childs" : [
+					{ "Name" : "InflatableBorder1mSlope1StraightLeft", }, 
+					{ "Name" : "InflatableBorder1mSlope1StraightRight", }
+					]
+				}
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "Start", 
+				"Childs" : [
+				{ "IsFolder" : true, "Name" : "8", 
+					"Childs" : [
+					{ "Name" : "InflatableBorder1mSlope8StartLeft", }, 
+					{ "Name" : "InflatableBorder1mSlope8StartRight", }
+					]
+				}, 
+				{ "IsFolder" : true, "Name" : "4", 
+					"Childs" : [
+					{ "Name" : "InflatableBorder1mSlope4StartLeft", }, 
+					{ "Name" : "InflatableBorder1mSlope4StartRight", }
+					]
+				}
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "End", 
+				"Childs" : [
+				{ "IsFolder" : true, "Name" : "8", 
+					"Childs" : [
+					{ "Name" : "InflatableBorder1mSlope8EndLeft", }, 
+					{ "Name" : "InflatableBorder1mSlope8EndRight", }
+					]
+				}, 
+				{ "IsFolder" : true, "Name" : "4", 
+					"Childs" : [
+					{ "Name" : "InflatableBorder1mSlope4EndLeft", }, 
+					{ "Name" : "InflatableBorder1mSlope4EndRight", }
+					]
+				}
+				]
+			}
+			]
+		}
+		]
+	}, 
+	{ "IsFolder" : true, "Name" : "InflatableTubes", 
+		"Childs" : [
+		{ "IsFolder" : true, "Name" : "TubeStraight", 
+			"Childs" : [
+			{ "Name" : "InflatableTubeStraight", }, 
+			{ "Name" : "InflatableTubeStraightX2", }, 
+			{ "Name" : "InflatableTubeStraightX4", }
+			]
+		}, 
+		{ "IsFolder" : true, "Name" : "Curves", 
+			"Childs" : [
+			{ "Name" : "InflatableTubeCurve1", }, 
+			{ "Name" : "InflatableTubeCurve2", }, 
+			{ "Name" : "InflatableTubeCurve3", }, 
+			{ "Name" : "InflatableTubeCurve4", }
+			]
+		}, 
+		{ "IsFolder" : true, "Name" : "Slope4", 
+			"Childs" : [
+			{ "Name" : "InflatableTubeSlopeBase", }, 
+			{ "Name" : "InflatableTubeSlopeStart", }, 
+			{ "Name" : "InflatableTubeSlope4Straight", }, 
+			{ "Name" : "InflatableTubeSlopeEnd", }
+			]
+		}, 
+		{ "IsFolder" : true, "Name" : "Slope2", 
+			"Childs" : [
+			{ "Name" : "InflatableTubeSlopeStartX2", }, 
+			{ "Name" : "InflatableTubeSlopeEndX2", }, 
+			{ "Name" : "InflatableTubeSlope2Straight", }
+			]
+		}, 
+		{ "IsFolder" : true, "Name" : "Transitions", 
+			"Childs" : [
+			{ "Name" : "InflatableMat4mToTube6mFlat", }, 
+			{ "Name" : "InflatableMat4mToTube6mFlatX2", }, 
+			{ "Name" : "InflatableMat4mToTube6mCenter", }, 
+			{ "Name" : "InflatableMat4mToTube6mCenterX2", }
+			]
+		}
+		]
+	}, 
+	{ "IsFolder" : true, "Name" : "Moving", 
+		"Childs" : [
+		{ "IsFolder" : true, "Name" : "MovingObstacles", 
+			"Childs" : [
+			{ "IsFolder" : true, "Name" : "Tube", 
+				"Childs" : [
+				{ "Name" : "ObstacleTube6mRotateLevel0", }, 
+				{ "Name" : "ObstacleTube6mRotateLevel1", }, 
+				{ "Name" : "ObstacleTube6mRotateLevel2", }, 
+				{ "Name" : "ObstacleTube6mOscillateLevel0", }, 
+				{ "Name" : "ObstacleTube6mOscillateLevel1", }, 
+				{ "Name" : "ObstacleTube6mOscillateLevel2", }, 
+				{ "Name" : "ObstacleTube6m", }
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "TubeX2", 
+				"Childs" : [
+				{ "Name" : "ObstacleTube6mX2RotateLevel0", }, 
+				{ "Name" : "ObstacleTube6mX2RotateLevel1", }, 
+				{ "Name" : "ObstacleTube6mX2RotateLevel2", }, 
+				{ "Name" : "ObstacleTube6mX2OscillateLevel0", }, 
+				{ "Name" : "ObstacleTube6mX2OscillateLevel1", }, 
+				{ "Name" : "ObstacleTube6mX2OscillateLevel2", }, 
+				{ "Name" : "ObstacleTube6mX2", }
+				]
+			}
+			]
+		}, 
+		{ "IsFolder" : true, "Name" : "Turnstiles", 
+			"Childs" : [
+			{ "IsFolder" : true, "Name" : "TurnstileTriple", 
+				"Childs" : [
+				{ "IsFolder" : true, "Name" : "4m", 
+					"Childs" : [
+					{ "Name" : "ObstacleTurnstile4mTripleRightLevel0", }, 
+					{ "Name" : "ObstacleTurnstile4mTripleRightLevel1", }, 
+					{ "Name" : "ObstacleTurnstile4mTripleRightLevel2", }, 
+					{ "Name" : "ObstacleTurnstile4mTripleLeftLevel0", }, 
+					{ "Name" : "ObstacleTurnstile4mTripleLeftLevel1", }, 
+					{ "Name" : "ObstacleTurnstile4mTripleLeftLevel2", }, 
+					{ "Name" : "ObstacleTurnstile4mTripleOscillateLevel0", }, 
+					{ "Name" : "ObstacleTurnstile4mTripleOscillateLevel1", }, 
+					{ "Name" : "ObstacleTurnstile4mTripleOscillateLevel2", }, 
+					{ "Name" : "ObstacleTurnstile4mTriple", }
+					]
+				}, 
+				{ "IsFolder" : true, "Name" : "8m", 
+					"Childs" : [
+					{ "Name" : "ObstacleTurnstile8mTripleRightLevel0", }, 
+					{ "Name" : "ObstacleTurnstile8mTripleRightLevel1", }, 
+					{ "Name" : "ObstacleTurnstile8mTripleRightLevel2", }, 
+					{ "Name" : "ObstacleTurnstile8mTripleLeftLevel0", }, 
+					{ "Name" : "ObstacleTurnstile8mTripleLeftLevel1", }, 
+					{ "Name" : "ObstacleTurnstile8mTripleLeftLevel2", }, 
+					{ "Name" : "ObstacleTurnstile8mTripleOscillateLevel0", }, 
+					{ "Name" : "ObstacleTurnstile8mTripleOscillateLevel1", }, 
+					{ "Name" : "ObstacleTurnstile8mTripleOscillateLevel2", }, 
+					{ "Name" : "ObstacleTurnstile8mTriple", }
+					]
+				}, 
+				{ "IsFolder" : true, "Name" : "16m", 
+					"Childs" : [
+					{ "Name" : "ObstacleTurnstile16mTripleRightLevel0", }, 
+					{ "Name" : "ObstacleTurnstile16mTripleRightLevel1", }, 
+					{ "Name" : "ObstacleTurnstile16mTripleRightLevel2", }, 
+					{ "Name" : "ObstacleTurnstile16mTripleLeftLevel0", }, 
+					{ "Name" : "ObstacleTurnstile16mTripleLeftLevel1", }, 
+					{ "Name" : "ObstacleTurnstile16mTripleLeftLevel2", }, 
+					{ "Name" : "ObstacleTurnstile16mTripleOscillateLevel0", }, 
+					{ "Name" : "ObstacleTurnstile16mTripleOscillateLevel1", }, 
+					{ "Name" : "ObstacleTurnstile16mTripleOscillateLevel2", }, 
+					{ "Name" : "ObstacleTurnstile16mTriple", }
+					]
+				}
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "TurnstileDouble", 
+				"Childs" : [
+				{ "IsFolder" : true, "Name" : "4m", 
+					"Childs" : [
+					{ "Name" : "ObstacleTurnstile4mDoubleRightLevel0", }, 
+					{ "Name" : "ObstacleTurnstile4mDoubleRightLevel1", }, 
+					{ "Name" : "ObstacleTurnstile4mDoubleRightLevel2", }, 
+					{ "Name" : "ObstacleTurnstile4mDoubleLeftLevel0", }, 
+					{ "Name" : "ObstacleTurnstile4mDoubleLeftLevel1", }, 
+					{ "Name" : "ObstacleTurnstile4mDoubleLeftLevel2", }, 
+					{ "Name" : "ObstacleTurnstile4mDoubleOscillateLevel0", }, 
+					{ "Name" : "ObstacleTurnstile4mDoubleOscillateLevel1", }, 
+					{ "Name" : "ObstacleTurnstile4mDoubleOscillateLevel2", }, 
+					{ "Name" : "ObstacleTurnstile4mDouble", }
+					]
+				}, 
+				{ "IsFolder" : true, "Name" : "8m", 
+					"Childs" : [
+					{ "Name" : "ObstacleTurnstile8mDoubleRightLevel0", }, 
+					{ "Name" : "ObstacleTurnstile8mDoubleRightLevel1", }, 
+					{ "Name" : "ObstacleTurnstile8mDoubleRightLevel2", }, 
+					{ "Name" : "ObstacleTurnstile8mDoubleLeftLevel0", }, 
+					{ "Name" : "ObstacleTurnstile8mDoubleLeftLevel1", }, 
+					{ "Name" : "ObstacleTurnstile8mDoubleLeftLevel2", }, 
+					{ "Name" : "ObstacleTurnstile8mDoubleOscillateLevel0", }, 
+					{ "Name" : "ObstacleTurnstile8mDoubleOscillateLevel1", }, 
+					{ "Name" : "ObstacleTurnstile8mDoubleOscillateLevel2", }, 
+					{ "Name" : "ObstacleTurnstile8mDouble", }
+					]
+				}, 
+				{ "IsFolder" : true, "Name" : "16m", 
+					"Childs" : [
+					{ "Name" : "ObstacleTurnstile16mDoubleRightLevel0", }, 
+					{ "Name" : "ObstacleTurnstile16mDoubleRightLevel1", }, 
+					{ "Name" : "ObstacleTurnstile16mDoubleRightLevel2", }, 
+					{ "Name" : "ObstacleTurnstile16mDoubleLeftLevel0", }, 
+					{ "Name" : "ObstacleTurnstile16mDoubleLeftLevel1", }, 
+					{ "Name" : "ObstacleTurnstile16mDoubleLeftLevel2", }, 
+					{ "Name" : "ObstacleTurnstile16mDoubleOscillateLevel0", }, 
+					{ "Name" : "ObstacleTurnstile16mDoubleOscillateLevel1", }, 
+					{ "Name" : "ObstacleTurnstile16mDoubleOscillateLevel2", }, 
+					{ "Name" : "ObstacleTurnstile16mDouble", }
+					]
+				}
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "TurnstileSimple", 
+				"Childs" : [
+				{ "IsFolder" : true, "Name" : "4m", 
+					"Childs" : [
+					{ "Name" : "ObstacleTurnstile4mSimpleRightLevel0", }, 
+					{ "Name" : "ObstacleTurnstile4mSimpleRightLevel1", }, 
+					{ "Name" : "ObstacleTurnstile4mSimpleRightLevel2", }, 
+					{ "Name" : "ObstacleTurnstile4mSimpleLeftLevel0", }, 
+					{ "Name" : "ObstacleTurnstile4mSimpleLeftLevel1", }, 
+					{ "Name" : "ObstacleTurnstile4mSimpleLeftLevel2", }, 
+					{ "Name" : "ObstacleTurnstile4mSimpleOscillateLevel0", }, 
+					{ "Name" : "ObstacleTurnstile4mSimpleOscillateLevel1", }, 
+					{ "Name" : "ObstacleTurnstile4mSimpleOscillateLevel2", }, 
+					{ "Name" : "ObstacleTurnstile4mSimple", }
+					]
+				}, 
+				{ "IsFolder" : true, "Name" : "8m", 
+					"Childs" : [
+					{ "Name" : "ObstacleTurnstile8mSimpleRightLevel0", }, 
+					{ "Name" : "ObstacleTurnstile8mSimpleRightLevel1", }, 
+					{ "Name" : "ObstacleTurnstile8mSimpleRightLevel2", }, 
+					{ "Name" : "ObstacleTurnstile8mSimpleLeftLevel0", }, 
+					{ "Name" : "ObstacleTurnstile8mSimpleLeftLevel1", }, 
+					{ "Name" : "ObstacleTurnstile8mSimpleLeftLevel2", }, 
+					{ "Name" : "ObstacleTurnstile8mSimpleOscillateLevel0", }, 
+					{ "Name" : "ObstacleTurnstile8mSimpleOscillateLevel1", }, 
+					{ "Name" : "ObstacleTurnstile8mSimpleOscillateLevel2", }, 
+					{ "Name" : "ObstacleTurnstile8mSimple", }
+					]
+				}, 
+				{ "IsFolder" : true, "Name" : "16m", 
+					"Childs" : [
+					{ "Name" : "ObstacleTurnstile16mSimpleRightLevel0", }, 
+					{ "Name" : "ObstacleTurnstile16mSimpleRightLevel1", }, 
+					{ "Name" : "ObstacleTurnstile16mSimpleRightLevel2", }, 
+					{ "Name" : "ObstacleTurnstile16mSimpleLeftLevel0", }, 
+					{ "Name" : "ObstacleTurnstile16mSimpleLeftLevel1", }, 
+					{ "Name" : "ObstacleTurnstile16mSimpleLeftLevel2", }, 
+					{ "Name" : "ObstacleTurnstile16mSimpleOscillateLevel0", }, 
+					{ "Name" : "ObstacleTurnstile16mSimpleOscillateLevel1", }, 
+					{ "Name" : "ObstacleTurnstile16mSimpleOscillateLevel2", }, 
+					{ "Name" : "ObstacleTurnstile16mSimple", }
+					]
+				}
+				]
+			}
+			]
+		}, 
+		{ "IsFolder" : true, "Name" : "Rotors", 
+			"Childs" : [
+			{ "IsFolder" : true, "Name" : "ObstacleRotor16m", 
+				"Childs" : [
+				{ "IsFolder" : true, "Name" : "Rotor16mHolesX4", 
+					"Childs" : [
+					{ "Name" : "ObstacleRotor16mHolesX4Level0", }, 
+					{ "Name" : "ObstacleRotor16mHolesX4Level1", }, 
+					{ "Name" : "ObstacleRotor16mHolesX4Level2", }, 
+					{ "Name" : "ObstacleRotor16mHolesX4OscillateLevel0", }, 
+					{ "Name" : "ObstacleRotor16mHolesX4OscillateLevel1", }, 
+					{ "Name" : "ObstacleRotor16mHolesX4OscillateLevel2", }, 
+					{ "Name" : "ObstacleRotor16mHolesX4", }
+					]
+				}, 
+				{ "IsFolder" : true, "Name" : "Rotor16mWing90", 
+					"Childs" : [
+					{ "Name" : "ObstacleRotor16mWing90Level0", }, 
+					{ "Name" : "ObstacleRotor16mWing90Level1", }, 
+					{ "Name" : "ObstacleRotor16mWing90Level2", }, 
+					{ "Name" : "ObstacleRotor16mWing90OscillateLevel0", }, 
+					{ "Name" : "ObstacleRotor16mWing90OscillateLevel1", }, 
+					{ "Name" : "ObstacleRotor16mWing90OscillateLevel2", }, 
+					{ "Name" : "ObstacleRotor16mWing90", }
+					]
+				}, 
+				{ "IsFolder" : true, "Name" : "Rotor16mWing90x2", 
+					"Childs" : [
+					{ "Name" : "ObstacleRotor16mWing90X2Level0", }, 
+					{ "Name" : "ObstacleRotor16mWing90X2Level1", }, 
+					{ "Name" : "ObstacleRotor16mWing90X2Level2", }, 
+					{ "Name" : "ObstacleRotor16mWing90X2OscillateLevel0", }, 
+					{ "Name" : "ObstacleRotor16mWing90X2OscillateLevel1", }, 
+					{ "Name" : "ObstacleRotor16mWing90X2OscillateLevel2", }, 
+					{ "Name" : "ObstacleRotor16mWing90X2", }
+					]
+				}
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "ObstacleRotor24m", 
+				"Childs" : [
+				{ "IsFolder" : true, "Name" : "Rotor24mHolesX4", 
+					"Childs" : [
+					{ "Name" : "ObstacleRotor24mHolesX4Level0", }, 
+					{ "Name" : "ObstacleRotor24mHolesX4Level1", }, 
+					{ "Name" : "ObstacleRotor24mHolesX4Level2", }, 
+					{ "Name" : "ObstacleRotor24mHolesX4OscillateLevel0", }, 
+					{ "Name" : "ObstacleRotor24mHolesX4OscillateLevel1", }, 
+					{ "Name" : "ObstacleRotor24mHolesX4OscillateLevel2", }, 
+					{ "Name" : "ObstacleRotor24mHolesX4", }
+					]
+				}, 
+				{ "IsFolder" : true, "Name" : "Rotor24mWing90", 
+					"Childs" : [
+					{ "Name" : "ObstacleRotor24mWing90Level0", }, 
+					{ "Name" : "ObstacleRotor24mWing90Level1", }, 
+					{ "Name" : "ObstacleRotor24mWing90Level2", }, 
+					{ "Name" : "ObstacleRotor24mWing90OscillateLevel1", }, 
+					{ "Name" : "ObstacleRotor24mWing90OscillateLevel0", }, 
+					{ "Name" : "ObstacleRotor24mWing90OscillateLevel2", }, 
+					{ "Name" : "ObstacleRotor24mWing90", }
+					]
+				}, 
+				{ "IsFolder" : true, "Name" : "Rotor24mWing90x2", 
+					"Childs" : [
+					{ "Name" : "ObstacleRotor24mWing90X2Level0", }, 
+					{ "Name" : "ObstacleRotor24mWing90X2Level1", }, 
+					{ "Name" : "ObstacleRotor24mWing90X2Level2", }, 
+					{ "Name" : "ObstacleRotor24mWing90X2OscillateLevel0", }, 
+					{ "Name" : "ObstacleRotor24mWing90X2OscillateLevel1", }, 
+					{ "Name" : "ObstacleRotor24mWing90X2OscillateLevel2", }, 
+					{ "Name" : "ObstacleRotor24mWing90X2", }
+					]
+				}
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "RotorFrames", 
+				"Childs" : [
+				{ "Name" : "ObstacleRotorFrame16m", }, 
+				{ "Name" : "ObstacleRotorFrame24m", }
+				]
+			}
+			]
+		}, 
+		{ "IsFolder" : true, "Name" : "Pushers", 
+			"Childs" : [
+			{ "IsFolder" : true, "Name" : "Pusher4m", 
+				"Childs" : [
+				{ "Name" : "ObstaclePusher4mLevel0", }, 
+				{ "Name" : "ObstaclePusher4mLevel1", }, 
+				{ "Name" : "ObstaclePusher4mLevel2", }, 
+				{ "Name" : "ObstaclePusher4mSharpLevel0", }, 
+				{ "Name" : "ObstaclePusher4mSharpLevel1", }, 
+				{ "Name" : "ObstaclePusher4mSharpLevel2", }, 
+				{ "Name" : "ObstaclePusher4m", }
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "Pusher8m", 
+				"Childs" : [
+				{ "Name" : "ObstaclePusher8mLevel0", }, 
+				{ "Name" : "ObstaclePusher8mLevel1", }, 
+				{ "Name" : "ObstaclePusher8mLevel2", }, 
+				{ "Name" : "ObstaclePusher8mSharpLevel0", }, 
+				{ "Name" : "ObstaclePusher8mSharpLevel1", }, 
+				{ "Name" : "ObstaclePusher8mSharpLevel2", }, 
+				{ "Name" : "ObstaclePusher8m", }
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "Pusher16m", 
+				"Childs" : [
+				{ "Name" : "ObstaclePusher16mLevel0", }, 
+				{ "Name" : "ObstaclePusher16mLevel1", }, 
+				{ "Name" : "ObstaclePusher16mLevel2", }, 
+				{ "Name" : "ObstaclePusher16mSharpLevel0", }, 
+				{ "Name" : "ObstaclePusher16mSharpLevel1", }, 
+				{ "Name" : "ObstaclePusher16mSharpLevel2", }, 
+				{ "Name" : "ObstaclePusher16m", }
+				]
+			}
+			]
+		}
+		]
+	}, 
+	{ "IsFolder" : true, "Name" : "Supports", 
+		"Childs" : [
+		{ "IsFolder" : true, "Name" : "PrefabsOpen", 
+			"Childs" : [
+			{ "Name" : "SupportTubePrefabClosed3D", }, 
+			{ "Name" : "SupportTubePrefabClosed2D", }, 
+			{ "Name" : "SupportTubePrefabClosed1D", }, 
+			{ "Name" : "SupportTubeX2PrefabClosed2D", }
+			]
+		}, 
+		{ "IsFolder" : true, "Name" : "PrefabsClosed", 
+			"Childs" : [
+			{ "Name" : "SupportTubePrefabOpen3D", }, 
+			{ "Name" : "SupportTubePrefabOpen2D", }, 
+			{ "Name" : "SupportTubePrefabOpen1D", }
+			]
+		}, 
+		{ "IsFolder" : true, "Name" : "Tubes", 
+			"Childs" : [
+			{ "Name" : "SupportTubeStraightX1", }, 
+			{ "Name" : "SupportTubeStraightX2", }, 
+			{ "Name" : "SupportTubeStraightX3", }, 
+			{ "Name" : "SupportTubeStraightX4", }, 
+			{ "Name" : "SupportTubeCornerX1", }, 
+			{ "Name" : "SupportTubeDiagX1", }
+			]
+		}, 
+		{ "IsFolder" : true, "Name" : "Connectors", 
+			"Childs" : [
+			{ "Name" : "SupportConnectorX6", }, 
+			{ "Name" : "SupportConnectorX1", }
+			]
+		}
+		]
+	}, 
+	{ "IsFolder" : true, "Name" : "Dev", "Collection" : "Common", 
+		"Childs" : [
+		{ "Name" : "CharacterQuest", }, 
+		{ "IsFolder" : true, "Name" : "Decoration", 
+			"Childs" : [
+			{ "IsFolder" : true, "Name" : "RoadWork", 
+				"Childs" : [
+				{ "Name" : "ConstructionSignKitBarrier", }, 
+				{ "Name" : "ConstructionSign2C", }, 
+				{ "Name" : "ConstructionSign2A", }, 
+				{ "Name" : "ConstructionSign2B", }, 
+				{ "Name" : "ConstructionSignKit02", }, 
+				{ "Name" : "ConstructionSignKit01", }, 
+				{ "Name" : "ConstructionLamp", }, 
+				{ "Name" : "ConstructionSign2D", }, 
+				{ "Name" : "ConstructionTrafficCone", }, 
+				{ "Name" : "ConstructionSignKitConeBig", }, 
+				{ "Name" : "ConstructionWireSpool", }, 
+				{ "Name" : "StreetPortableToilet", }
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "RoadSigns", 
+				"Childs" : [
+				{ "Name" : "ConstructionPlasticTrafficBarrierR", }, 
+				{ "Name" : "ConstructionPlasticTrafficBarrierBR", }, 
+				{ "Name" : "ConstructionPlasticTrafficBarrier", }, 
+				{ "Name" : "ConstructionPlasticTrafficBarrierB", }, 
+				{ "Name" : "StreetRoadLeftArrowPanel", }, 
+				{ "Name" : "StreetRoadRightArrowPanel", }, 
+				{ "Name" : "StreetRoadLeftRightArrowPanel", }, 
+				{ "Name" : "StreetRoadLeftScreenPanel", }, 
+				{ "Name" : "StreetRoadRightScreenPanel", }, 
+				{ "Name" : "StreetRoadXScreenPanel", }
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "CityFurnitures", 
+				"Childs" : [
+				{ "Name" : "StreetTelephoneBooth", }, 
+				{ "Name" : "StreetParkingMeter2", }, 
+				{ "Name" : "StreetParkingMeter", }, 
+				{ "Name" : "StreetGarbagecan", }, 
+				{ "Name" : "StreetGarbagecan2", }, 
+				{ "Name" : "StreetEmergencyCallBox", }, 
+				{ "Name" : "StreetPostalBox", }, 
+				{ "Name" : "StreetPostalBox2", }, 
+				{ "Name" : "StreetFireHydrant", }, 
+				{ "Name" : "StreetRoadBlocker", }, 
+				{ "Name" : "StreetBusStop", }, 
+				{ "Name" : "StreetBench", }, 
+				{ "Name" : "StreetNewsStand", }
+				]
+			}
+			]
+		}, 
+		{ "IsFolder" : true, "Name" : "Game", 
+			"Childs" : [
+			{ "IsFolder" : true, "Name" : "Characters", 
+				"Childs" : [
+				{ "Name" : "CharacterSport", }, 
+				{ "Name" : "CharacterSupport", }, 
+				{ "Name" : "CharacterFast", }, 
+				{ "Name" : "CharacterSharp", }, 
+				{ "Name" : "CharacterTactic", }
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "Moto", 
+				"Childs" : [
+				{ "Name" : "Motorcycle", }
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "Car", 
+				"Childs" : [
+				{ "Name" : "CarSport", }, 
+				{ "Name" : "CarStreet", }, 
+				{ "Name" : "CarStunt", }, 
+				{ "Name" : "CarSuper", }, 
+				{ "Name" : "CarSmall", }
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "Truck", 
+				"Childs" : [
+				{ "Name" : "TruckTractor", }, 
+				{ "Name" : "TruckTrailer", }
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "Train", 
+				"Childs" : [
+				{ "Name" : "WagonPassenger", }, 
+				{ "Name" : "WagonLoco", }, 
+				{ "Name" : "WagonFreight", }
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "Air", 
+				"Childs" : [
+				{ "Name" : "Helicopter", }, 
+				{ "Name" : "Plane", }
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "Water", 
+				"Childs" : [
+				{ "Name" : "Boat", }, 
+				{ "Name" : "Carrier", }
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "MissionWaypoints", 
+				"Childs" : [
+				{ "Name" : "Waypoint4m", }, 
+				{ "Name" : "Waypoint8m", }, 
+				{ "Name" : "Waypoint16m", }, 
+				{ "Name" : "Waypoint32m", }
+				]
+			}
+			]
+		}, 
+		{ "IsFolder" : true, "Name" : "Movables", "Collection" : "Stadium", 
+			"Childs" : [
+			{ "IsFolder" : true, "Name" : "Movables", 
+				"Childs" : [
+				{ "Name" : "MovableSphere2m", }, 
+				{ "Name" : "WoodBall2m", "Collection" : "Common", }, 
+				{ "Name" : "IronBall2m", "Collection" : "Common", }, 
+				{ "Name" : "MovableSphere1m", }, 
+				{ "Name" : "MovableSphere4m", }
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "Unnamed_0", 
+				"Childs" : [
+				{ "Name" : "MovableBarrier1m", }, 
+				{ "Name" : "MovableBarrier2m", }, 
+				{ "Name" : "MovableBarrier4m", }
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "CM Balls", "Collection" : "Common", 
+				"Childs" : [
+				{ "Name" : "WoodBallSmall", }, 
+				{ "Name" : "WoodBallMedium", }, 
+				{ "Name" : "WoodBallBig", }, 
+				{ "Name" : "IronBallSmall", }, 
+				{ "Name" : "IronBallMedium", }, 
+				{ "Name" : "IronBallBig", }
+				]
+			}
+			]
+		}, 
+		{ "IsFolder" : true, "Name" : "Bumpers", "Collection" : "Stadium", 
+			"Childs" : [
+			{ "IsFolder" : true, "Name" : "BumperWall", 
+				"Childs" : [
+				{ "Name" : "ObstacleBumperWall8m", }
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "Bumper", 
+				"Childs" : [
+				{ "Name" : "ObstacleBumper8m", }, 
+				{ "Name" : "ObstacleBumper16m", }
+				]
+			}, 
+			{ "IsFolder" : true, "Name" : "BumperPillars", 
+				"Childs" : [
+				{ "Name" : "ObstacleBumperPillar2m", }, 
+				{ "Name" : "ObstacleBumperPillar4m", }, 
+				{ "Name" : "ObstacleBumperPillar6m", }, 
+				{ "Name" : "ObstacleBumperPillar8m", }
+				]
+			}
+			]
+		}, 
+		{ "IsFolder" : true, "Name" : "Any", "Collection" : "SMCommon", 
+			"Childs" : [
+			{ "Name" : "Turret1", }, 
+			{ "Name" : "Base1", }, 
+			{ "Name" : "ItemSpawn", }, 
+			{ "Name" : "PickupShieldAlways", }, 
+			{ "Name" : "Gold", }, 
+			{ "Name" : "Fuel", }
+			]
+		}, 
+		{ "IsFolder" : true, "Name" : "Obsolete", "Collection" : "Stadium", 
+			"Childs" : [
+			{ "IsFolder" : true, "Name" : "Trees", 
+				"Childs" : [
+				{ "Name" : "Cypress", }, 
+				{ "Name" : "Fir", }
+				]
+			}
+			]
+		}
+		]
+	}
+	]
+}
